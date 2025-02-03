@@ -1,0 +1,26 @@
+/* bugSolution.css */
+.container {
+  width: 500px; /* Explicit width for the container */
+  border: 1px solid black;
+}
+
+.inner {
+  width: calc(100% - 20px); /* Now works correctly */
+  height: 100px;
+  background-color: lightblue;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Or use alternative layout for more complex scenarios */
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.inner2 {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen; 
+}
